@@ -1,0 +1,17 @@
+<h1> Bienvenue sur notre site de gossips ! </h1>
+
+<div class="text-center"
+<p> Quel est ton nom ?  
+<form action="/", method="post">
+	<input type="hidden" name="authenticity_token">
+	<input type="text" name= "first_name" value= <%= form_authenticity_token%> >
+	<input type="submit" name="Envoyer">
+</form>
+</p>
+<p> Bonjour <%= @user.first_name %> </p>
+</div>
+
+<div>
+	<h2> Voici tous les gossips </h2>
+	<%= @gossips %>
+</div>
