@@ -1,1 +1,14 @@
-<h1> Bonjour, <%= @user %> </h1>
+<p></p>
+<div class="container">
+	<div class="card">
+		<div class="card-header">
+			<a href="/user/<%=@gossip.user.id%>"> <%= @gossip.user.first_name %> </a>
+		</div>
+		<div class="card-body">
+			<p class="card-text">
+				<%= @gossip.content %>
+			</p>
+		</div>
+	</div>
+</div>
+<p></p>

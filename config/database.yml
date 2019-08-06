@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: nomdetasuperappli_development
+  database: THP_Gossipv1_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: nomdetasuperappli_test
+  database: THP_Gossipv1_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: nomdetasuperappli_production
-  username: nomdetasuperappli
-  password: <%= ENV['NOMDETASUPERAPPLI_DATABASE_PASSWORD'] %>
+  database: THP_Gossipv1_production
+  username: THP_Gossipv1
+  password: <%= ENV['THP_GOSSIPV1_DATABASE_PASSWORD'] %>
